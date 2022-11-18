@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <title>Buy Membership Now</title>
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html"><img class="logo" src="D:\myWeb Projects\MFT\Images\logo.png"></a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="GetStarted.html">Get Started</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="franchise.html">Franchise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Label bar starts -->
+        <div class="label membership-label">
+            <h1>BUY NOW</h1>
+            <h1><span>TO AVAIL SPECIAL OFFERS ON ANNUAL MEMBERSHIPS</span></h1>
+            <ul class="label-text">
+                <li>
+                    <ul class="sub-labels">
+                        <li><img src="Images\membership-1.png" class="label-images"></li>
+                        <li class="membership-label-text">Welcome to MFT Gym - Submit<br>your details below</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-labels">
+                        <li><img src="Images\membership-2.png" class="label-images"></li>
+                        <li class="membership-label-text">Select your preferred workout program</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-labels">
+                        <li><img src="Images\membership-3.png" class="label-images"></li>
+                        <li class="membership-label-text">Avail your two-day free trail</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- registration form -->
+        <div class="membership-form">
+            <h1>Please Fill Out the Registration Form to Proceed</h1>
+            <div class="membership-form-details">
+                <form id="membership-registration">
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="f_name" placeholder="First Name *" name="f_name" required></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="l_name" placeholder="Last Name *" name="l_name" required></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="email" placeholder="Email *" name="email" required></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="contact" placeholder="Contact No. *" name="contact" required></div>
+                    <div class="form-membership"><input type="date" class="form-membership-input" id="birthday" name="birthday" required></div>    
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="address" placeholder="Address *" name="address" required></div><br>  
+                    <label class="membership-form-labels" for="">Gender *</label>   
+                    <div class="form-membership">
+                        <select>
+                            <option>Please Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div><br>
+                    <label class="membership-form-labels" for="">Are you interested in personal training? *</label>   
+                    <div class="form-membership">
+                        <select>
+                            <option>Please Select</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div><br>
+                    <label class="membership-form-labels" for="">What package would you like to opt? *</label>   
+                    <div class="form-membership">
+                        <select>
+                            <option>Please Select</option>
+                            <option>Basic</option>
+                            <option>Beginner</option>
+                            <option>Premium</option>
+                            <option>Ultimate</option>
+                        </select>
+                    </div><br>
+                    <label class="membership-form-labels" for="">What type of program do you like to do? *</label>
+                    <div class="form-membership">
+                        <select>
+                            <option>Please Select</option>
+                            <option>Strength Training</option>
+                            <option>Powerlifting</option>
+                            <option>HIIT/Cardio</option>
+                            <option>Quick Result Program</option>
+                            <option>Tabata</option>
+                            <option>Yoga</option>
+                            <option>Zumba</option>
+                        </select>
+                    </div><br>
+                    <label class="membership-form-labels" for="image">Upload Image (passport size):</label>
+                    <div class="form-membership member-photo">
+                        <input type="file" id="image" name="img" accept="image/*">
+                    </div>
+                    <div class="form-membership membership-agreement">
+                        <input type="checkbox" id="agree" name="agreement">
+                        <label class="membership-form-labels" for="agree">Yes, I agree to the <a href="TandC.html" target="_blank">Terms and Conditions</a> of MFT Gym.</label><br>
+                    </div>
+                    <div class="form-membership"><button type="submit" class="submit-form">SUBMIT</button></div>            
+                </form>
+            </div>
+        </div>
+
+        <!-- join now -->
+        <div class="join-now">
+            <ul class="join-now-offer">
+                <li id="join-now-offer-text">Join this month<br><span>Do something today that your future self will thank you for.</span></li>
+            </ul>
+        </div>
+
+
+        <!-- footer section  -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="about.html"> <i class="fas fa-arrow-right"></i>About Us</a>
+                    <a href="team.html"> <i class="fas fa-arrow-right"></i>Our Team</a>
+                    <a href="franchise.html"> <i class="fas fa-arrow-right"></i>Franchise</a>
+                    <a href="testimonials.html"> <i class="fas fa-arrow-right"></i>Testimonials</a>
+                    <a href="programs.html"> <i class="fas fa-arrow-right"></i>Programs</a>
+                </div>
+
+                <div class="box">
+                    <h3><br></h3>
+                    <a href="blogs.html"> <i class="fas fa-arrow-right"></i>Blogs</a>
+                    <a href="gallery.html"> <i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="membership.html"> <i class="fas fa-arrow-right"></i>Buy Membership Now</a>
+                    <a href="TandC.html"> <i class="fas fa-arrow-right"></i>Terms & Conditions</a>
+                    <a href="locator.html"> <i class="fas fa-arrow-right"></i>Gym Locator</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <ul class="social-media">
+                        <li><a href="https://m.facebook.com/The-MFT-Gym-1311684638865116/?tsid=0.052537652439760496&source=result" target="_blank"> <i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/themftgymofficial/" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCe6RmW-8DP-g2ksz1LRU65w" target="_blank"> <i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest updates</p>
+                    <form action="">
+                        <input type="email" name="" placeholder="enter your email" id="">
+                        <input type="submit" value="subscribe" class="btn" onclick="subscribe()">
+                    </form>
+                </div>
+            </div>
+
+            <div class="credits">
+                <p>&commat;2022 The MFT Gym.in. All Rights Reserved.</p>
+                <p>Created By - RISHABH SAXENA</p> 
+            </div>
+        </section>
+        <a href="membership.html"><button id="redirect">&uarr;</button></a>
+        
+        <script src="script.js"></script>
+        <script src="membership.js"></script>
+    </body>
+</html>    

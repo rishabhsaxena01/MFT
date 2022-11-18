@@ -1,0 +1,1584 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+}
+
+html::-webkit-scrollbar {
+    width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #FFC300);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #424242;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424242;
+    color: white;
+    height: 6rem;
+    width: 100%;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: #FFC300;
+}
+
+.brand-title .logo {
+    margin-left: 0.5rem;
+    height: 4rem;
+    width: 12rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+    font-size: x-large;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        background-color: #424242;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .label-text {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offer-label {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offer-membership {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 5vh;
+    }
+
+    .connect-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videou {
+        max-width: 800px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .get-in-touch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fitness-gallery {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fitness-image {
+        padding: 2vh;
+        width: 25vw;
+        height: 15vw;
+    }
+
+    .footer .box-container {
+        padding-top: 5vh;
+        padding-left: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .grid-item img, .grid-item video {
+        max-width: 800px;
+        max-height: 500px;
+    }
+
+    .staff-member {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-options ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: column;
+    }
+
+    .about-owner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+.slider-box {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+#slider {
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+
+#slider img {
+    width: 100%;
+    height: fit-content;
+    z-index: -1;
+}
+
+.indicators {
+    position : absolute;
+    left     : 50%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+}
+
+.indicators span {
+    display      : inline-block;
+    width        : 15px;
+    height       : 15px;
+    border-radius: 50%;
+    background   : rgba(255, 255, 255, 0.5);
+    cursor       : pointer;
+}
+
+.active {
+    background: #ffff !important;
+}
+
+.label {
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+
+#tagline1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #424242;
+    text-align: center;
+}
+
+#tagline2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFC300;
+    text-align: center;
+    font-style: italic;
+}
+
+.label-text {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-labels {
+    list-style-type: none;
+    text-align: center;   
+    margin-top: 5vh; 
+}
+
+.label-images {
+    max-height: 15vh;
+    max-width: 15vh;
+    margin-bottom: 2vh;
+}
+
+.label-alt-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: #909497;
+}
+
+.special-offer {
+    background-color: #424242;
+    color: #FFC300;
+    text-transform: uppercase;
+    padding: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.offer-label {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offer-membership {
+    list-style-type: none;
+    display: flex;    
+}
+
+#offer-label-text1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+#offer-label-text2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#offer-label-text2 span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#offer-label-button {
+    margin-left: 15vh;
+    margin-top: 10vh;
+    text-transform: none;
+}
+
+#offer-label-button a {
+    color: #FFC300;
+    text-decoration: none;
+    font-size: large;
+    border: 2px solid #FFC300;
+    padding: 2vh;
+}
+
+.connect {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.connect-section {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    margin-top: auto;
+}
+
+.latest-video, .get-in-touch {
+    list-style-type: none;
+    text-align: center;
+}
+
+.videou {
+    width: 50vw;
+    height: 30vw;    
+}
+
+.latest-video h1, .gallery-h1, .get-started h1 {
+    font-weight: 500;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 span {
+    color: #FFC300;
+}
+
+.get-in-touch h1 {
+    padding-bottom: 20px;
+    font-weight: 500 !important;
+    font-size: 25px !important;
+    font-style: italic;
+    text-align: center;
+}
+
+.form-group {
+    padding-bottom: 30px !important;
+    padding-left: 25px !important;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form-options {
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    width: 120%;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-left: -10%;
+}
+
+.form-group input {
+    padding: 6px 12px;
+    margin-left: -10%;
+    margin-right: -15px;
+    width: 120%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+}
+
+.get-in-touch-btn {
+    margin-top: 2.5vh;
+    background-color: #FFC300;
+    width: 50%;
+    height: 30px;
+    font-size: 14px;
+    border: 2px solid black;
+    font-style: italic;
+}
+
+.get-in-touch-btn:hover {
+    background-color: #f5d97e;
+}
+
+.about-fitness {
+    background-color: #424242;
+    text-align: center;
+    padding-bottom: 7vh;
+}
+
+.about-fitness p {
+    padding-top: 5vh;
+    font-weight: bolder;
+    color: rgb(255, 195, 0);
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-fitness h1 {
+    padding-top: 0;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #FFC300;
+}
+
+.about-fitness h1 span {
+    font-style: italic;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.about-fitness h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5vh;
+}
+
+.fitness-gallery {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+}
+
+.fitness-image {
+    width: 40vh;
+    height: 25vh;
+}
+
+.about-fitness a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #FFC300;
+    padding: 10px 20px;
+} 
+
+.about-fitness a:hover {
+    background-color: #f5d97e;
+}
+
+.container {
+    text-align: center;
+}
+
+.testimonial-headings {
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+    font-style: italic;
+    padding-top: 5vh;
+}
+
+.testimonial-headings p {
+    font-size: 5vh;
+    font-weight: 600;
+}
+
+.testimonials {
+    width: 100%;
+    max-height: 80vh;
+    text-align: center;
+}
+
+.pricing-packages {
+    background-color: rgb(235, 235, 235);
+}
+
+.pricing-packages h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.pricing-packages h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.package-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.package-options {
+    text-align: center;
+    background-color: white;
+    width: 18vw;
+    padding: 2vw;
+    margin-bottom: 5vw;
+}
+
+.package-options .package-options-details {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+.package-options button {
+    background-color: #FFC300;
+    border: none;
+    padding: 15px 25px;
+}
+
+.package-options button:hover {
+    background-color:#f5d97e;
+}
+
+.package-options button a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+h3 .price {
+    font-size: 3vw;
+}
+
+h3 span {
+    color: #FFC300;
+    font-weight: bold;
+}
+
+.customer-review {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.customer-review button {
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    background: #FFC300;
+    color: #424242;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-top: 10%;
+}
+
+.customer-review button:hover {
+    background: #f5d97e;
+    color: #fff;
+    font-size: larger;
+}
+
+.customer-review img {
+    width: 60%;
+    height: 30%;
+}
+
+.footer {
+    background: #424242;
+  }
+  
+.footer .box-container {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding-bottom: 10vh;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #FFC300;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .box-container .box p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .box-container .box a {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.4rem 0;
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+    padding-right: 1.5rem;
+    color: #FFF;
+}
+
+.social-media {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #FFC300;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border: 0.2rem solid #FFC300;
+}
+
+.footer .box-container .box form input[type="submit"] {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    background: #FFC300;
+    border: none;
+}
+
+.footer .box-container .box form input[type="submit"]:hover {
+    background: #f5d97e;
+}
+
+.box-gallery h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-style: italic;
+}
+
+.box-gallery marquee img {
+    height: 12vw;
+    width: 20vw;
+    margin: 3vh;
+    margin-bottom: 10vh;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.75);
+}
+
+.footer .credits {
+    padding-bottom: 12vh;
+    background:rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .credits p:nth-child(1) {
+    color: #fff;
+    float: left;
+    position: relative;
+    padding-left: 10vh;
+}
+
+.footer .credits p:nth-child(2) {
+    color: #fff;
+    float: right;
+    position: relative;
+    padding-top: 2vh;
+    padding-right: 6%;
+}
+
+#redirect {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #FFC300;
+    border: none;
+    float: right;
+    position:initial;
+}
+
+.banner {
+    overflow: hidden;
+    background: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/blog_posts/webmd-doctors/1800x1200_empty-gym.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+section.banner {
+    height: 500px;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
+.banner .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.banner-head {
+    margin-top: 15em;
+}
+
+.banner-head h3 {
+    color: #ffe400;
+    font-weight: bold;
+    font-size: 27pt;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 4px #000;
+}
+
+
+.banner-head h3 span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.cloud {
+    text-align: center;
+    margin-top: -35px;
+}
+
+.cloud-img {
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 5vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 50px 60px 50px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.grid-item img, .grid-item video {
+    width: 50vh;
+    height: 30vh;
+    margin: 30px 0px;
+}
+
+.join-now {
+    background-color: #FFC300;
+    color: #000;
+    padding: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.join-now-offer {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#join-now-offer-text {
+    font-size: 2rem;
+}
+
+#join-now-offer-text span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#join-now-offer-button a {
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+    border: 2px solid #000;
+    padding: 2vh;
+}
+
+#join-now-offer-button a:hover {
+    background: #f5d97e;
+}
+
+#register-now {
+    background: #FFC300;
+    padding: 7px;
+    font-size: 20px;
+    color: #000;
+}
+
+#register-now a {
+    text-decoration: none;
+    color: #000;
+}
+
+#register-now a:hover {
+    text-decoration: underline;
+}
+
+.get-started {
+    text-align: center;
+}
+
+.started-img {
+    width: 300px;
+    height: 300px;
+    margin: 10vh;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+}
+
+.started-img:hover {
+    width: 310px;
+    height: 310px;
+    box-shadow: 0px 0px 20px 5px #FFC300;
+}
+
+.get-started p {
+    padding: 2vh 5vh;
+    font-size: 1.3rem;
+}
+
+.why h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFC300;
+    font-size: 2rem;
+    background-color: #424242;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.why ol {
+    font-family: 'Roboto', sans-serif;
+}
+
+.why ol li {
+    color: #555555;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.why ol li span {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.why-gym, .why-mft {
+    margin: 5%;
+    padding: 2%;
+}
+
+.banner-franchise {
+    overflow: hidden;
+    background: url(https://images.moneycontrol.com/static-mcnews/2021/01/Gym-workout-India.jpg);
+    filter: grayscale(30%);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.franchise {
+    text-align: center;
+}
+
+.franchise h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.franchise-form {
+    text-align: center;
+    
+}
+
+.franchise-form .get-in-touch-form {
+    width: 50vw;
+    margin-left: 25vw;
+    text-align: center;
+}
+
+.franchise-data-inputs {
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    padding: 10px;
+}
+
+.franchise-data-inputs > div {
+    text-align: center;
+}
+
+.form-franchise  {
+    margin: 15px;
+    padding-left: 10px;
+}
+
+.form-bot {
+    border: 1px solid #ccc;
+    width: 15vw;
+    margin-left: 45px;
+    padding-top: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.form-bot input {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.form-bot span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.submit-form {
+    width: auto;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.banner-about {
+    overflow: hidden;
+    background: url(https://www.wallpapertip.com/wmimgs/76-766213_muscle-building-fitness-man.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.about-container {
+    background: url(https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 250%;
+    padding-top: 4vw;
+}
+
+.about-section {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 20px 70px;
+}
+
+.about-section h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFC300;
+    font-style: italic;
+}
+
+.about-section p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #424242;
+}
+
+.about-address {
+    text-align: center;
+    margin-top: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #FFC300;
+    background-color: #424242;
+    padding: 10px 0;
+}
+
+.about-address i {
+    font-size: larger;
+}
+
+.about-address span a {
+    color: #FFC300;
+    font-size: smaller;
+}
+
+.banner-team {
+    margin-bottom: 5vw;
+}
+
+.banner-team {
+    background: url(https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 250%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.team-container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 5px;
+}
+
+.team-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+    color: #FFC300;
+}
+
+.team-cards {
+    margin: 10px;
+    padding-bottom: 5vw;
+}
+
+.staff-member {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.staff-member li {
+    margin: 20px;
+    text-align: center;
+}
+
+.staff-member-img {
+    width: 17vw;
+    height: 25vw;
+    border-radius: 2.5%;
+    border: 0.5vw solid #fff;
+}
+
+.staff-member-img:hover {
+    width: 18vw;
+    height: 26vw;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 20px 2px #FFC300;
+}
+
+.staff-member li h1 {
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+h1 hr {
+    border: 5px solid #FFC300;
+    width: 5vw;
+}
+
+.staff-member li h3 {
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    color: #909497;
+    text-transform: uppercase;
+}
+
+.staff-member li p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    color: #909497;
+}
+
+.banner-programs {
+    background: url(https://i.ytimg.com/vi/gey73xiS8F4/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.our-programs {
+    margin: 0 5vw 5vw 5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.program-about {
+    font-size: 2vw;
+    color: #FFC300;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5vw;
+    background-color: #424242;
+    padding: 3vw;
+    border-radius: 10px;
+}
+
+.programs-list {
+    list-style-type: none;
+    margin: 3vw;
+}
+
+.programs-list li h1 {
+    color: #424242;
+    font-size: 2vw;
+    font-style: italic;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-top: 3vw;
+}
+
+ul li div {
+    text-align: center;
+}
+
+.program-detail {
+    font-size: 1.5vw;
+    color: #909497;
+}
+
+.program-img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-bottom: 2vw;
+}
+
+.program-img:hover {
+    width: 22vw;
+    height: 22vw;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 20px 2px #FFC300;
+}
+
+.program-registration {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.program-registration a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+}
+
+.program-registration a:hover {
+    text-decoration: underline;
+    color: #FFC300;
+}
+
+.banner-contact {
+    background: url(https://www.brunswickcrossing.com/hubfs/fitness.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.container-contact {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-entries {
+    margin: 5vw;
+}
+
+.form-contact {
+    width: 30vw;
+}
+
+.form-control {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    width:30vw;
+    height:20vw;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:40vw;
+    height:20vw;
+}
+
+.gmap_iframe {
+    width:40vw!important;
+    height:20vw!important;
+}
+
+.get-touch {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #909497;
+}
+
+.get-touch h3 {
+    font-size: 2vw;
+    color: #424242;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.get-touch p, small {
+    padding-top: 0%;
+    font-size: 1vw;
+}
+
+.media-links {
+    justify-content: center;
+}
+
+.media-links i {
+    color: #424242;
+    border: 1.5px solid #424242;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.contact-options {
+    background: url(https://img.freepik.com/premium-photo/close-up-hand-young-man-holding-dumbbell-after-choosing-one-row-exercise-fitness-gym_1150-47229.jpg);
+    padding: 5vw;
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+
+.contact-options ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-options ul li {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.contact-options ul li i {
+    font-size: 4vw;
+    padding-bottom: 1vw;
+}
+
+.contact-options ul li span {
+    color: #FFC300;
+    font-size: 2vw;
+}
+
+.banner-locator {
+    background: url(https://cdn.create.vista.com/api/media/small/167960026/stock-photo-athletic-man-weightlifting);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.text-line {
+    text-align: center;
+}
+
+.text-line img {
+    width: 10vw;
+    height: 1.3vw;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.gym-locations h1 {
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw;
+    margin-bottom: 5vw;
+}
+
+#gym-outlets {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+}
+  
+#gym-outlets td, #gym-outlets th {
+    border: 1px solid #ddd;
+    padding: 18px;
+}
+  
+#gym-outlets tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+#gym-outlets tr:hover {
+    background-color: #ddd;
+}
+  
+#gym-outlets th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #424242;
+    color: white;
+}
+
+.apply-franchise {
+    background: url(https://www.snackinginsneakers.com/wp-content/uploads/2015/01/dumbbells-2.jpg);
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+}
+
+.apply-franchise marquee {
+    height: 3vw;
+    margin-bottom: 5vw;
+}
+
+.banner-testimonials {
+    background: url(https://fitnessbomba.com/wp-content/uploads/2021/05/10-Rules-for-Building-Muscle-Without-Getting-Fat.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.testimonial-section h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #424242;
+    font-size: 2.5vw;
+}
+
+.testimonial-cards {
+    margin: 5vw;
+    padding: 5vw 0;
+    box-shadow: 0 0 20px 1px;
+}
+
+.member-reviews, .member-card, .member-bio {
+    list-style-type: none;
+}
+
+.member-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+.testimonial-members {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.member-bio {
+    padding-left: 0%;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+.member-bio h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFC300;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size: 1.5vw;
+}
+
+.member-bio p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-size: 1vw;
+}
+
+.membership-label {
+    margin-top: 8vw;
+    margin-bottom: 2vw;
+}
+
+.membership-label h1 {
+    text-align: center;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.membership-label-text {
+    color: #909497;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.membership-form {
+    text-align: center;
+    background: url(https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247__340.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    padding: 2vw 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.membership-form h1 {
+    font-size: 2vw;
+    color: #FFC300;
+    text-transform: uppercase;
+    margin-bottom: 3vw;
+}
+
+.membership-form-details {
+    margin: 1vw;
+    padding: 2vw 0 5vw;
+    background-color: #000;
+    border: 3px solid #FFC300;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.form-membership-input, .form-membership select {
+    width: 30vw;
+    height: 3vw;
+    margin: 7px;
+    padding-left: 10px;
+    border: 3px solid #FFC300;
+    border-radius: 30px;
+    background-color: #212121;
+    color:#FFC300;
+    font-size: 1vw;
+}
+
+.form-membership select option {
+    background-color: #FFC300;
+    font-size: 1vw;
+    color:#000;
+}
+
+.membership-form-labels {
+    color: #FFC300;
+    font-size: 1vw;
+}
+
+.member-photo input {
+    border-radius: 30px;
+    background-color: #212121;
+    color: #FFC300;
+    border: 3px solid #FFC300;
+    width: 30vw;
+    height: 3vw;
+    margin: 7px;
+    padding: 0.5vw 1vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.form-membership button {
+    background-color: #FFC300;
+    margin-top: 2vw;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.form-membership button:hover {
+    background-color: #f5d97e;
+    color: #FFF;
+    border: 3px solid #FFC300;
+}
+
+.membership-agreement {
+    padding-top: 1.5vw;
+}
+
+.banner-TandC {
+    background: url(https://www.nanaimobulletin.com/wp-content/uploads/2021/12/27679548_web1_211230-CDT-Gym-Essential-Status-K_1.jpg) no-repeat;
+    background-size: 100% 150%;
+}
+
+.banner-blogs {
+    background: url(https://st2.depositphotos.com/3927429/8215/i/450/depositphotos_82158134-stock-photo-athletic-man-and-woman-with.jpg) no-repeat;
+    background-size: 100% 150%;    
+}
+
+.blog-section p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+}
+
+.about-owner {
+    display: flex;
+    margin: 5vw;
+}
+
+#owner {
+    width: 30vw;
+    height: 25vw;
+    margin: 2vw 5vw;
+}
+
+#owner-info h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    color: #424242;
+    margin-bottom: 0%;
+}
+
+#owner-info h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+#owner-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+}
