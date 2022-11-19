@@ -9,7 +9,7 @@
     <body>
         <!-- Nav bar -->
         <nav class="navbar">
-            <div class="brand-title"><a href="index.html"><img class="logo" src="D:\myWeb Projects\MFT\Images\logo.png"></a></div>
+            <div class="brand-title"><a href="index.html"><img class="logo" src="./Images/logo.png"></a></div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -48,7 +48,7 @@
                 <ul class="member-reviews">
                     <li>
                         <ul class="member-card">
-                            <li><img src="Images\IMG_0262.JPG" class="testimonial-members"></li>
+                            <li><img src="./Images/IMG_0262.JPG" class="testimonial-members"></li>
                             <li><ul class="member-bio">
                                     <li><h3>NAME OF THE CUSTOMER1</h3></li>
                                     <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
@@ -58,7 +58,7 @@
                     </li>
                     <li>
                         <ul class="member-card">
-                            <li><img src="Images\IMG_0312.JPG" class="testimonial-members"></li>
+                            <li><img src="./Images/IMG_0312.JPG" class="testimonial-members"></li>
                             <li><ul class="member-bio">
                                     <li><h3>NAME OF THE CUSTOMER2</h3></li>
                                     <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
@@ -68,7 +68,7 @@
                     </li>
                     <li>
                         <ul class="member-card">
-                            <li><img src="Images\IMG_0279.JPG" class="testimonial-members"></li>
+                            <li><img src="./Images/IMG_0279.JPG" class="testimonial-members"></li>
                             <li><ul class="member-bio">
                                     <li><h3>NAME OF THE CUSTOMER3</h3></li>
                                     <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
@@ -113,9 +113,9 @@
                 <div class="box">
                     <h3>newsletter</h3>
                     <p>subscribe for latest updates</p>
-                    <form action="">
-                        <input type="email" name="" placeholder="enter your email" id="">
-                        <input type="submit" value="subscribe" class="btn" onclick="subscribe()">
+                    <form id="subscription-btn">
+                        <input type="email" name="email" placeholder="enter your email" id="">
+                        <input type="submit" value="subscribe" class="btn">
                     </form>
                 </div>
             </div>
@@ -123,15 +123,15 @@
                 <h1>GALLERY</h1>
                 <br>
                 <marquee scrollamount="10" loop="-1">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-1.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-2.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-3.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-4.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-5.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-6.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-7.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-8.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-9.JPG">
+                        <img src="./Images/gallery-1.JPG">
+                        <img src="./Images/gallery-2.JPG">
+                        <img src="./Images/gallery-3.JPG">
+                        <img src="./Images/gallery-4.JPG">
+                        <img src="./Images/gallery-5.JPG">
+                        <img src="./Images/gallery-6.JPG">
+                        <img src="./Images/gallery-7.JPG">
+                        <img src="./Images/gallery-8.JPG">
+                        <img src="./Images/gallery-9.JPG">
                 </marquee>
             </div>
             <div class="credits">
@@ -142,5 +142,6 @@
         <a href="locator.html"><button id="redirect">&uarr;</button></a>
         
         <script src="script.js" defer></script>
+        <script src="index.js"></script>
     </body>
 </html>    

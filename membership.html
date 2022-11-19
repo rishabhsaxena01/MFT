@@ -9,7 +9,7 @@
     <body>
         <!-- Nav bar -->
         <nav class="navbar">
-            <div class="brand-title"><a href="index.html"><img class="logo" src="D:\myWeb Projects\MFT\Images\logo.png"></a></div>
+            <div class="brand-title"><a href="index.html"><img class="logo" src="./Images/logo.png"></a></div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -58,15 +58,15 @@
             <h1>Please Fill Out the Registration Form to Proceed</h1>
             <div class="membership-form-details">
                 <form id="membership-registration">
-                    <div class="form-membership"><input type="text" class="form-membership-input" id="f_name" placeholder="First Name *" name="f_name" required></div>
-                    <div class="form-membership"><input type="text" class="form-membership-input" id="l_name" placeholder="Last Name *" name="l_name" required></div>
-                    <div class="form-membership"><input type="text" class="form-membership-input" id="email" placeholder="Email *" name="email" required></div>
-                    <div class="form-membership"><input type="text" class="form-membership-input" id="contact" placeholder="Contact No. *" name="contact" required></div>
-                    <div class="form-membership"><input type="date" class="form-membership-input" id="birthday" name="birthday" required></div>    
-                    <div class="form-membership"><input type="text" class="form-membership-input" id="address" placeholder="Address *" name="address" required></div><br>  
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="f_name" placeholder="First Name *" name="firstName"></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="l_name" placeholder="Last Name *" name="lastName"></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="email" placeholder="Email *" name="email"></div>
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="contact" placeholder="Contact No. *" name="contact"></div>
+                    <div class="form-membership"><input type="date" class="form-membership-input" id="birthday" name="dob"></div>    
+                    <div class="form-membership"><input type="text" class="form-membership-input" id="address" placeholder="Address *" name="address"></div><br>  
                     <label class="membership-form-labels" for="">Gender *</label>   
                     <div class="form-membership">
-                        <select>
+                        <select name="gender">
                             <option>Please Select</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -74,16 +74,16 @@
                         </select>
                     </div><br>
                     <label class="membership-form-labels" for="">Are you interested in personal training? *</label>   
-                    <div class="form-membership">
-                        <select>
+                    <div class="form-membership" name="personalTraining">
+                        <select name="personalTraining">
                             <option>Please Select</option>
-                            <option>Yes</option>
-                            <option>No</option>
+                            <option >Yes</option>
+                            <option >No</option>
                         </select>
                     </div><br>
                     <label class="membership-form-labels" for="">What package would you like to opt? *</label>   
-                    <div class="form-membership">
-                        <select>
+                    <div class="form-membership" >
+                        <select name="packageAdopt">
                             <option>Please Select</option>
                             <option>Basic</option>
                             <option>Beginner</option>
@@ -92,8 +92,8 @@
                         </select>
                     </div><br>
                     <label class="membership-form-labels" for="">What type of program do you like to do? *</label>
-                    <div class="form-membership">
-                        <select>
+                    <div class="form-membership" >
+                        <select name="programType">
                             <option>Please Select</option>
                             <option>Strength Training</option>
                             <option>Powerlifting</option>
@@ -106,10 +106,10 @@
                     </div><br>
                     <label class="membership-form-labels" for="image">Upload Image (passport size):</label>
                     <div class="form-membership member-photo">
-                        <input type="file" id="image" name="img" accept="image/*">
+                        <input type="file" id="image" name="image" accept="image/*">
                     </div>
                     <div class="form-membership membership-agreement">
-                        <input type="checkbox" id="agree" name="agreement">
+                        <input type="checkbox" id="agree" name="tAndC">
                         <label class="membership-form-labels" for="agree">Yes, I agree to the <a href="TandC.html" target="_blank">Terms and Conditions</a> of MFT Gym.</label><br>
                     </div>
                     <div class="form-membership"><button type="submit" class="submit-form">SUBMIT</button></div>            
@@ -158,9 +158,9 @@
                 <div class="box">
                     <h3>newsletter</h3>
                     <p>subscribe for latest updates</p>
-                    <form action="">
-                        <input type="email" name="" placeholder="enter your email" id="">
-                        <input type="submit" value="subscribe" class="btn" onclick="subscribe()">
+                    <form id="subscription-btn">
+                        <input type="email" name="email" placeholder="enter your email" id="">
+                        <input type="submit" value="subscribe" class="btn">
                     </form>
                 </div>
             </div>
@@ -173,6 +173,7 @@
         <a href="membership.html"><button id="redirect">&uarr;</button></a>
         
         <script src="script.js"></script>
+        <script src="index.js"></script>
         <script src="membership.js"></script>
     </body>
 </html>    

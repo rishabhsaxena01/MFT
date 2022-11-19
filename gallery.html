@@ -9,7 +9,7 @@
     <body>
         <!-- Nav bar -->
         <nav class="navbar">
-            <div class="brand-title"><a href="index.html"><img class="logo" src="D:\myWeb Projects\MFT\Images\logo.png"></a></div>
+            <div class="brand-title"><a href="index.html"><img class="logo" src="./Images/logo.png"></a></div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -104,9 +104,9 @@
                 <div class="box">
                     <h3>newsletter</h3>
                     <p>subscribe for latest updates</p>
-                    <form action="">
-                        <input type="email" name="" placeholder="enter your email" id="">
-                        <input type="submit" value="subscribe" class="btn" onclick="subscribe()">
+                    <form id="subscription-btn">
+                        <input type="email" name="email" placeholder="enter your email" id="">
+                        <input type="submit" value="subscribe" class="btn">
                     </form>
                 </div>
             </div>
@@ -119,5 +119,6 @@
         <a href="gallery.html"><button id="redirect">&uarr;</button></a>
         
         <script src="script.js" defer></script>
+        <script src="index.js"></script>
     </body>
 </html>    

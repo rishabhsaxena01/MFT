@@ -9,7 +9,7 @@
     <body>
         <!-- Nav bar -->
         <nav class="navbar">
-            <div class="brand-title"><a href="index.html"><img class="logo" src="D:\myWeb Projects\MFT\Images\logo.png"></a></div>
+            <div class="brand-title"><a href="index.html"><img class="logo" src="./Images/logo.png"></a></div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -87,11 +87,11 @@
                             </select>
                         </div>
                         <div class="form-group form-franchise"><input type="text" name="city" placeholder="City" required></div>
-                        <div class="form-group form-franchise"><input type="text" name="company_name" placeholder="Company Name(optional)"></div>
-                        <div class="form-group form-franchise"><input type="text" name="company_website" placeholder="Company Website(optional)"></div>
-                        <div class="form-group form-franchise"><input type="text" name="turnover" placeholder="TURNOVER (in INR)" required></div>
-                        <div class="form-group form-franchise"><input type="text" name="amount_available" placeholder="Amount Available for Investment" required></div>
-                        <div class="form-bot form-franchise"><input type="checkbox" required><span> I'm not a robot.</span></div>
+                        <div class="form-group form-franchise"><input type="text" name="companyName" placeholder="Company Name(optional)"></div>
+                        <div class="form-group form-franchise"><input type="text" name="companyWebsite" placeholder="Company Website(optional)"></div>
+                        <div class="form-group form-franchise"><input type="text" name="turnOver" placeholder="TURNOVER (in INR)" required></div>
+                        <div class="form-group form-franchise"><input type="text" name="amountForInvestment" placeholder="Amount Available for Investment" required></div>
+                        <!-- <div class="form-bot form-franchise"><input type="checkbox" required><span> I'm not a robot.</span></div> -->
                     </div>
                     <div class="form-group"><button type="submit" class="get-in-touch-btn submit-form">SUBMIT</button></div>
                 </form>
@@ -131,9 +131,9 @@
                 <div class="box">
                     <h3>newsletter</h3>
                     <p>subscribe for latest updates</p>
-                    <form action="">
-                        <input type="email" name="" placeholder="enter your email" id="">
-                        <input type="submit" value="subscribe" class="btn" onclick="subscribe()">
+                    <form id="subscription-btn">
+                        <input type="email" name="email" placeholder="enter your email" id="">
+                        <input type="submit" value="subscribe" class="btn">
                     </form>
                 </div>
             </div>
@@ -141,15 +141,15 @@
                 <h1>GALLERY</h1>
                 <br>
                 <marquee scrollamount="10" loop="-1">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-1.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-2.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-3.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-4.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-5.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-6.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-7.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-8.JPG">
-                        <img src="D:\myWeb Projects\MFT\Images\gallery-9.JPG">
+                        <img src="./Images/gallery-1.JPG">
+                        <img src="./Images/gallery-2.JPG">
+                        <img src="./Images/gallery-3.JPG">
+                        <img src="./Images/gallery-4.JPG">
+                        <img src="./Images/gallery-5.JPG">
+                        <img src="./Images/gallery-6.JPG">
+                        <img src="./Images/gallery-7.JPG">
+                        <img src="./Images/gallery-8.JPG">
+                        <img src="./Images/gallery-9.JPG">
                 </marquee>
             </div>
             <div class="credits">
@@ -160,6 +160,7 @@
         <a href="franchise.html"><button id="redirect">&uarr;</button></a>
         
         <script src="script.js"></script>
+        <script src="index.js"></script>
         <script src="franchise.js"></script>
     </body>
 </html>

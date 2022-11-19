@@ -1,8 +1,8 @@
-document.getElementById("membership-registration").addEventListener("submit", function (event) {
+document.getElementById("membership-registration").addEventListener("submit", async function (event) {
     event.preventDefault();
     var formData = new FormData(event.target);
-    for (var pair of formData.entries()) {
-        console.log(pair[0] + ": " + pair[1]);
-    }
-    console.log(Object.fromEntries(formData));
+    await fetch("http://localhost:8000/customer/add", {
+    method: "POST",
+    body: formData,
+  });
 });
