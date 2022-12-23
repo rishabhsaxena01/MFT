@@ -53,6 +53,7 @@ body {
 }
 
 .navbar-links {
+    z-index: 5;
     height: 100%;
 }
 
