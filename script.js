@@ -26,7 +26,7 @@ var form = document.getElementById("subscription-btn");
 async function handleForm(event) {
   event.preventDefault();
   var formData = new FormData(event.target);
-  await fetch("http://localhost:8000/subscription/add", {
+  await fetch("https://backend-mftgym.onrender.com/subscription/add", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
