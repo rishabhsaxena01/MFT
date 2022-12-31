@@ -38,9 +38,9 @@ btn4.onclick = function () {
  
 
 var cust_reviews = [".Images\review-1.png",
-    "Images\review-2.png",
-    "D:\myWeb Projects\MFT\Images\review-3.png",
-    "D:\myWeb Projects\MFT\Images\review-4.png"] ;
+    ".Images\review-2.png",
+    ".Images\review-3.png",
+    ".Images\review-4.png"] ;
 
 var num = 0;
 

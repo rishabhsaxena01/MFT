@@ -715,24 +715,16 @@ h3 span {
 }
 
 .footer .credits {
-    padding-bottom: 12vh;
     background:rgba(0, 0, 0, 0.5);
     font-family: 'Roboto', sans-serif;
 }
 
-.footer .credits p:nth-child(1) {
+.footer .credits p {
     color: #fff;
-    float: left;
     position: relative;
-    padding-left: 10vh;
-}
-
-.footer .credits p:nth-child(2) {
-    color: #fff;
-    float: right;
-    position: relative;
-    padding-top: 2vh;
-    padding-right: 6%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1vw;
 }
 
 #redirect {
