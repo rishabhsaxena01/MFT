@@ -727,6 +727,16 @@ h3 span {
     font-size: 1vw;
 }
 
+.footer .credits p a {
+    text-decoration: none;
+    color: #FFC300;
+}
+
+.footer .credits p a:hover {
+    text-decoration: underline;
+    color:red;
+}
+
 #redirect {
     height: 50px;
     width: 50px;
