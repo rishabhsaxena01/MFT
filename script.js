@@ -33,8 +33,15 @@ async function handleForm(event) {
     },
     body: JSON.stringify(Object.fromEntries(formData)),
   });
+  // const inputs = document.getElementsByTagName('input');
+
+  // for (index = 0; index < inputs.length; ++index) {
+  //   inputs[index].value = '';
+  // }
+  form.reset()
 }
 form.addEventListener("submit", handleForm);
+
 
 
 

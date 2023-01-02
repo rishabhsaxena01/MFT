@@ -1,4 +1,5 @@
-document.getElementById("form-contact").addEventListener("submit", async function (event) {
+const form = document.getElementById("form-contact")
+form.addEventListener("submit", async function (event) {
     event.preventDefault();
     var formData = new FormData(event.target);
     await fetch("https://backend-mftgym.onrender.com/contact/add", {
@@ -8,4 +9,5 @@ document.getElementById("form-contact").addEventListener("submit", async functio
     },
     body: JSON.stringify(Object.fromEntries(formData)),
   });
+  form.reset();
 });
