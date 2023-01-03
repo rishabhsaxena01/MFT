@@ -312,7 +312,7 @@ body {
 }
 
 .special-offer {
-    background-color: #424242;
+    background: url('./Images/offer-label.jpg');
     color: #FFC300;
     text-transform: uppercase;
     padding: 5vh;
@@ -749,7 +749,7 @@ h3 span {
 
 .banner {
     overflow: hidden;
-    background: url('./Images/gallery-background.jpg');
+    background: url('./Images/banner-gallery.JPG');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
@@ -858,7 +858,7 @@ section.banner {
 #register-now {
     background: #FFC300;
     padding: 7px;
-    font-size: 20px;
+    font-size: 2vw;
     color: #000;
 }
 
@@ -928,7 +928,7 @@ section.banner {
 
 .banner-franchise {
     overflow: hidden;
-    background: url(https://images.moneycontrol.com/static-mcnews/2021/01/Gym-workout-India.jpg);
+    background: url('./Images/banner-franchise.jpg');
     filter: grayscale(30%);
     background-repeat: no-repeat;
     background-size: 100% 150%;
@@ -996,13 +996,13 @@ section.banner {
 
 .banner-about {
     overflow: hidden;
-    background: url(https://www.wallpapertip.com/wmimgs/76-766213_muscle-building-fitness-man.jpg);
+    background: url('./Images/banner-about.JPG');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
 
 .about-container {
-    background: url(https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg);
+    background: url('./Images/banner-about.JPG');
     background-repeat: no-repeat;
     background-size: 100% 250%;
     padding-top: 4vw;
@@ -1052,7 +1052,7 @@ section.banner {
 }
 
 .banner-team {
-    background: url(https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg);
+    background: url('./Images/banner-team.jpg');
     background-repeat: no-repeat;
     background-size: 100% 250%;
     padding-top: 5vw;
@@ -1129,7 +1129,7 @@ h1 hr {
 }
 
 .banner-programs {
-    background: url(https://i.ytimg.com/vi/gey73xiS8F4/maxresdefault.jpg);
+    background: url('./Images/banner-programs.JPG');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
@@ -1206,7 +1206,7 @@ ul li div {
 }
 
 .banner-contact {
-    background: url(https://www.brunswickcrossing.com/hubfs/fitness.jpg);
+    background: url('./Images/banner-contact.jpg');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
@@ -1285,7 +1285,7 @@ ul li div {
 }
 
 .contact-options {
-    background: url(https://img.freepik.com/premium-photo/close-up-hand-young-man-holding-dumbbell-after-choosing-one-row-exercise-fitness-gym_1150-47229.jpg);
+    background: url('./Images/banner-t&c.jpg');
     padding: 5vw;
     background-repeat: no-repeat;
     background-size: 100% 200%;
@@ -1316,7 +1316,7 @@ ul li div {
 }
 
 .banner-locator {
-    background: url(https://cdn.create.vista.com/api/media/small/167960026/stock-photo-athletic-man-weightlifting);
+    background: url('./Images/banner-gymLocator.jpg');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
@@ -1371,7 +1371,7 @@ ul li div {
 }
 
 .apply-franchise {
-    background: url(https://www.snackinginsneakers.com/wp-content/uploads/2015/01/dumbbells-2.jpg);
+    background: url('./Images/background-locatorFranchise.jpg');
     padding-top: 3vw;
     padding-bottom: 5vw;
 }
@@ -1382,7 +1382,7 @@ ul li div {
 }
 
 .banner-testimonials {
-    background: url(https://fitnessbomba.com/wp-content/uploads/2021/05/10-Rules-for-Building-Muscle-Without-Getting-Fat.jpg);
+    background: url('./Images/banner-testimonials.JPG');
     background-repeat: no-repeat;
     background-size: 100% 150%;
 }
@@ -1459,7 +1459,7 @@ ul li div {
 
 .membership-form {
     text-align: center;
-    background: url(https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247__340.jpg);
+    background: url('./Images/background-registrationForm.JPG');
     background-repeat: no-repeat;
     background-size: 100% 150%;
     padding: 2vw 0;
@@ -1540,12 +1540,12 @@ ul li div {
 }
 
 .banner-TandC {
-    background: url(https://www.nanaimobulletin.com/wp-content/uploads/2021/12/27679548_web1_211230-CDT-Gym-Essential-Status-K_1.jpg) no-repeat;
+    background: url('./Images/banner-t&c.jpg');
     background-size: 100% 150%;
 }
 
 .banner-blogs {
-    background: url(https://st2.depositphotos.com/3927429/8215/i/450/depositphotos_82158134-stock-photo-athletic-man-and-woman-with.jpg) no-repeat;
+    background: url('./Images/banner-blogs.JPG');
     background-size: 100% 150%;    
 }
 
